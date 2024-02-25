@@ -1,0 +1,3 @@
+# Git Ignore
+/.next/
+/node_modules/

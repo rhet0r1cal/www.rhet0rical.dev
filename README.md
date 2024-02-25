@@ -1,4 +1,4 @@
 # Portfolio Website 🏠
 > Visit Here: https://rhet0rical.dev
 
-This repository holds a sleek and modern portfolio website showcasing a diverse collection of creative projects. It also includes various social links and other hidden secrets.
+This repository holds my portfolio, created with React. It also includes various socials and other various helpful resources.
