@@ -41,15 +41,15 @@ function Index(){return(
 
     {/* Links */}
     <div className='flexbox-center'>
-      <Button text='GitHub' url='https://github.com/rhet0r1cal' div={false}></Button>
-      <Button text='Twitter' url='https://twitter.com/Rhet0r1cal_' div={true}></Button>
-      <Button text='MonkeyType' url='https://monkeytype.com/profile/Rhet0r1cal_' div={true}></Button>
+      <Button text='/projects' url='https://github.com/rhet0r1cal?tab=repositories' div={false}></Button>
+      <Button text='/contact' url='/contact' div={true}></Button>
+      <Button text='/about' url='/about' div={true}></Button>
     </div>
 
     <div className='flexbox-center' style={{marginTop: -15}}>
-      <Button text='Projects' url='https://github.com/rhet0r1cal?tab=repositories' div={false}></Button>
-      <Button text='Contact' url='/contact' div={true}></Button>
-      <Button text='About Me' url='/about' div={true}></Button>
+      <Button text='/github' url='https://github.com/rhet0r1cal' div={false}></Button>
+      <Button text='/twitter' url='https://twitter.com/Rhet0r1cal_' div={true}></Button>
+      <Button text='/steam' url='https://steamcommunity.com/id/rhet0r1cal_' div={true}></Button>
     </div>
 
     <Version></Version>
