@@ -2,8 +2,8 @@
 import type { Metadata } from 'next';
 
 // Components
-import Button from'./components/button';
-import Version from './components/version';
+import Button from'../components/button';
+import Version from '../components/version';
 
 // Metadata
 export const metadata: Metadata = {
@@ -17,13 +17,13 @@ function Index(){return(
 
     {/* Header */}
     <div className = 'flexbox-center' style={{margin: -15}}>
-      <img id='profile' src = '/icons/me.png' width={50}></img>
+      <img id='profile' src = '/icons/me.png' width={75}></img>
       <p style={{paddingLeft: 30, fontSize: 30}}>
           What's up? <br></br> I'm <span className='special-text'>Rhet0r1cal_</span>
       </p>
     </div>
 
-    <p id='description' className='flexbox-center' style={{paddingBottom: 15}}>
+    <p id='description' className='flexbox-center' style={{paddingTop: 25, paddingBottom: 15}}>
       The walking embodiment of an empty can of tomato soup, with it's lid half open, and a fork sticking out of it. Also just so happens to be a web developer.
     </p>
 

@@ -74,6 +74,7 @@ a {
 }
 
 #profile {
+    image-rendering: crisp-edges;
     padding: 15px 25px 15px 15px;
     border-right: 3.5px dashed var(--highlight);
 }

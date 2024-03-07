@@ -1,6 +1,6 @@
 // Imports
 import React from 'react';
-import './styles/main.css';
+import '../../public/styles/main.css';
 
 // Init
 function RootLayout({children}: {children: React.ReactNode}){return(
