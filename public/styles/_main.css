@@ -1,0 +1,68 @@
+/* Core CSS Code. Should only contain base elements */
+html {
+    width: 100%;
+    height: 100%;
+
+    user-select: none;
+    color: var(--rhet-white);
+    font-family: Roboto-Mono;
+    background-color: var(--rhet-black);
+}
+
+body {
+    padding: 50px 75px;
+}
+
+a {
+    color: white;
+}
+
+/* Variables and Data */
+:root {
+    --highlight: #E5DCC5;
+    --rhet-white: #fafbfc;
+    --rhet-black: #2D2D2A;
+}
+
+/* Classes and Multiple Elements */
+.highlighted {
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+.text {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashed-border {
+    border-radius: 25px;
+    background-color: var(--rhet-black);
+    border: 3px dashed var(--highlight);
+}
+
+/* Font Families and Handlers */
+@font-face {
+    font-family: Roboto-Mono;
+    src: url('/RobotoMono-VariableFont_wght.ttf');
+}
+
+/* ID's and Specific Elements */
+#profile-icon {
+    image-rendering: crisp-edges;
+    padding: 15px 25px 15px 15px;
+    border-right: 3px dashed var(--highlight);
+}
+
+#description {
+    width: 525px;
+    margin: -10px auto;
+    text-align: center;
+}
+
+/* Keyframes and Animations */

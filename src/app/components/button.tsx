@@ -1,22 +1,23 @@
-"use client"    // Define Client
+"use client"
+
+// Import Stylesheet
+import '../../../public/styles/button.css'
 
 // Component
-function Button({text, url, div}: {text: string, url: string, div: boolean}){
-    
-    if (div == true){return(
+export default function Button({children, url, type, source, padded}: {children: React.ReactNode, url: string, type: string, source: string, padded: boolean}){
 
-        <p className="button" style={{marginLeft: 20}} onClick={() => {window.open(url)}}>
-            {text}
+    if (type == 'text' && padded) {return(
+        <p className = 'button' onClick={() => {window.open(url)}} style = {{marginLeft: 15}}>
+            {children}
         </p>
-
-    )} else if (div == false){return(
-
-        <p className="button" onClick={() => {window.open(url)}}>
-            {text}
+    )} else if (type == 'icon' && padded) {return(
+        <img className = 'alt-button' src = {source} onClick={() => {window.open(url)}} style = {{marginLeft: 15, height: 21}}></img>
+    )} else if (type == 'text' && !padded){return(
+        <p className = 'button' onClick={() => {window.open(url)}}>
+            {children}
         </p>
-
+    )} else if (type == 'icon' && !padded){return(
+        <img className = 'alt-button' src = {source} onClick={() => {window.open(url)}} style={{height: 21}}></img>
     )}
 
 }
-
-export default Button;

@@ -1,22 +1,20 @@
 // Imports
-import React from 'react';
-import '../../public/styles/main.css';
+import Decal from './components/decal';
+import '../../public/styles/_main.css';
 
 // Init
-function RootLayout({children}: {children: React.ReactNode}){return(
+function RootLayout({children}: Readonly<{children: React.ReactNode}>){return(
 
-  <>
-    <html lang="en" className='flexbox-center'>
-      <head>
-        <link rel="icon" type="image/x-icon" href="/icons/me.png"></link>
-      </head>
-      <body className='border'>
-        {children}
-        <img id = 'decal' src = '/planet.svg' width={2000}></img>
-        <script src = 'https://cdn.rhet0rical.dev/scripts/attribute.js'></script>
-      </body>
-    </html>
-  </>
+  <html lang = 'en' className='flex-center'>
+    <head>
+      <link rel = 'icon' href = 'https://cdn.rhet0rical.dev/images/cropped.png'></link>
+    </head>
+    <body className = 'dashed-border'>
+      {children}
+      <Decal size={2000}></Decal>
+      <script src = 'https://cdn.rhet0rical.dev/scripts/attribute.js'></script>
+    </body>
+  </html>
 
 )}
 

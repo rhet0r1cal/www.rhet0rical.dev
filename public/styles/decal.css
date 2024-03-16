@@ -1,0 +1,15 @@
+.decal {
+    top: 5%;
+    left: 45%;
+  
+    z-index: -1;
+    opacity: 20%;
+    position: fixed;
+    filter: grayscale(1);
+    animation: roll infinite 120s linear;
+}
+
+@keyframes roll {
+    0% {rotate: 360deg;};
+    100% {rotate: 0deg;};
+}

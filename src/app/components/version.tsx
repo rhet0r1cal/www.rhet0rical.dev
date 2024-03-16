@@ -1,38 +1,21 @@
-"use client"
-
-// Imports
-import React from 'react';
+// Import Stylesheet
+import '../../../public/styles/version.css';
 
 // Component
-function Version() {
-    const [version, setVersion] = React.useState(null);
+export default function VersionDisplay({text}: {text: string}){
 
-    // Fetch Version
-    React.useEffect(() => {
-        fetch('manifest.json')
-            .then(response => response.json())
-            .then(data => {
-                setVersion(data.version);
-            })
-            .catch(error => {
-                console.error('Error fetching version data:', error);
-            });
-    }, []);
+    // Version Constant
+    const version = '8.0.0'
 
-    // Render JSX
-    return (
-        <p id='version'>
-            {version ? (
-                <>
-                    {version} ~ Made by{' '}
-                    <span className="special-text">Rhet0r1cal_</span> with love ❤️
-                </>
-            ) : (
-                'Loading...'
-            )}
-        </p>
-    );
+    // Script
+    if (text == 'get'){return(
+
+        <p id = 'version'>v{version} ~ Made by <span className='highlighted'>Rhet0r1cal</span> With Love 💝</p>
+
+    )} else {
+
+        <p id = 'version'>v{text} ~ Made by <span className='highlighted'>Rhet0r1cal</span> With Love 💝</p>
+
+    }
+
 }
-
-// Export
-export default Version;

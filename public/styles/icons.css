@@ -1,0 +1,7 @@
+#icons img {
+    width: 25px;
+}
+
+#icons img:nth-child(n){
+    padding-left: 40px;
+}

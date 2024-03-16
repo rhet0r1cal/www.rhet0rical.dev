@@ -1,0 +1,31 @@
+.button {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 50px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.1s;
+    background-color: rgb(250, 251, 252, 0.1);
+}
+
+.button:hover {
+    transition: all ease-in-out 0.1s;
+  
+    cursor: pointer;
+    color: var(--rhet-black);
+    background-color: var(--rhet-white);
+}
+
+.alt-button {
+    padding: 15px 50px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.1s;
+    background-color: rgb(250, 251, 252, 0.1);
+}
+
+.alt-button:hover {
+    cursor: pointer;
+
+    filter: invert(1);
+    background-color: black;
+    transition: all ease-in-out 0.1s;
+}
