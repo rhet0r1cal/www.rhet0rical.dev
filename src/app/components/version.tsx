@@ -5,7 +5,7 @@ import '../../../public/styles/version.css';
 export default function VersionDisplay({text}: {text: string}){
 
     // Version Constant
-    const version = '8.0.0'
+    const version = '8.0.1'
 
     // Script
     if (text == 'get'){return(
