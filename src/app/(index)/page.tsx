@@ -2,9 +2,9 @@
 import type { Metadata } from 'next';
 
 // Components
-import VersionDisplay from '../components/version';
 import Button from '../components/button';
 import IconsDisplay from '../components/icons';
+import VersionDisplay from '../components/version';
 
 // Manifest
 export const metadata: Metadata = {

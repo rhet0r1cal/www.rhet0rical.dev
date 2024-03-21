@@ -1,4 +1,5 @@
 // Imports
+import Extra from './components/extra';
 import Decal from './components/decal';
 import '../../public/styles/_main.css';
 
@@ -12,6 +13,7 @@ function RootLayout({children}: Readonly<{children: React.ReactNode}>){return(
     <body className = 'dashed-border'>
       {children}
       <Decal size={2000}></Decal>
+      <Extra github = {true} bmac = {true}></Extra>
       <script src = 'https://cdn.rhet0rical.dev/scripts/attribute.js'></script>
     </body>
   </html>
